@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Eleventy output folder
+dist/
+
+# Local editor or OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Optional: IDE config folders
+.vscode/
+.idea/
+
+# Optional: Mac specific
+*.swp
