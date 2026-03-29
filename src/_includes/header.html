@@ -9,7 +9,7 @@
             </div>
             <nav class="mil-main-menu">
                 <ul id="swupMenu" class="mil-menu-transition mil-aic mil-m-4">
-                    <li class="mil-current">
+                    <li class="{% if page.url == '/' %}mil-current{% endif %}">
                         <a href="/">Home</a>
                     </li>
                     <li class="mil-has-children">
@@ -32,10 +32,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="{% if page.url contains '/blog/' %}mil-current{% endif %}">
                         <a href="/blog/">blog</a>
                     </li>
-                    <li>
+                    <li class="{% if page.url == '/contact/' %}mil-current{% endif %}">
                         <a href="/contact/">Contact</a>
                     </li>
                 </ul>
