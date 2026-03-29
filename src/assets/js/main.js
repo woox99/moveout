@@ -8,6 +8,8 @@ Portfolio:    https://themeforest.net/user/millerdigitaldesign/portfolio?ref=Mil
 p.s. I am available for Freelance hire (UI design, web development). email: miller.themes@gmail.com
 
 ------------------------------------------- */
+// Get year for copyright
+document.getElementById('year').textContent = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
@@ -442,34 +444,34 @@ document.addEventListener("DOMContentLoaded", function () {
     popup
     
     ------------------------------------------- */
-    let popupClicked = false;
+    // let popupClicked = false;
 
-    const initPopup = () => {
-        const callPopupButton = document.querySelector('.mil-call-popup');
-        const closePopupButton = document.querySelector('.mil-close-popup');
-        const discountPopup = document.querySelector('.mil-discount-popup');
+    // const initPopup = () => {
+    //     const callPopupButton = document.querySelector('.mil-call-popup');
+    //     const closePopupButton = document.querySelector('.mil-close-popup');
+    //     const discountPopup = document.querySelector('.mil-discount-popup');
 
-        if (callPopupButton && discountPopup) {
-            callPopupButton.addEventListener('click', function () {
-                discountPopup.classList.add('mil-active');
-                popupClicked = true;
-            });
-        }
+    //     if (callPopupButton && discountPopup) {
+    //         callPopupButton.addEventListener('click', function () {
+    //             discountPopup.classList.add('mil-active');
+    //             popupClicked = true;
+    //         });
+    //     }
 
-        if (closePopupButton && discountPopup) {
-            closePopupButton.addEventListener('click', function () {
-                discountPopup.classList.remove('mil-active');
-            });
-        }
-    };
+    //     if (closePopupButton && discountPopup) {
+    //         closePopupButton.addEventListener('click', function () {
+    //             discountPopup.classList.remove('mil-active');
+    //         });
+    //     }
+    // };
 
-    initPopup();
+    // initPopup();
 
-    setTimeout(function () {
+    // setTimeout(function () {
 
-        document.querySelector('.mil-discount-popup').classList.add('mil-active');
+    //     document.querySelector('.mil-discount-popup').classList.add('mil-active');
 
-    }, 20000);
+    // }, 20000);
 
     /* -------------------------------------------
         
@@ -477,32 +479,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ------------------------------------------- */
 
-    const initForms = () => {
-        var phoneInputs = document.querySelectorAll('.mil-phone-input');
+    // const initForms = () => {
+    //     var phoneInputs = document.querySelectorAll('.mil-phone-input');
 
-        phoneInputs.forEach(function (phoneInput) {
-            var cleave = new Cleave(phoneInput, {
-                delimiters: ['(', ')', '-', '-'],
-                blocks: [3, 3, 3, 2, 2],
-                prefix: '+38',
-                numericOnly: true,
-                noImmediatePrefix: true,
-            });
+    //     phoneInputs.forEach(function (phoneInput) {
+    //         var cleave = new Cleave(phoneInput, {
+    //             delimiters: ['(', ')', '-', '-'],
+    //             prefix: '+1',
+    //             blocks: [2, 3, 3, 4],
+    //             numericOnly: true,
+    //             noImmediatePrefix: true,
+    //         });
 
-            phoneInput.addEventListener('focus', function () {
-                if (phoneInput.value === '') {
-                    phoneInput.value = '+38';
-                }
-            });
+    //         phoneInput.addEventListener('focus', function () {
+    //             if (phoneInput.value === '') {
+    //                 phoneInput.value = '+1';
+    //             }
+    //         });
 
-            phoneInput.addEventListener('blur', function () {
-                if (phoneInput.value === '+38' || phoneInput.value === '+38(') {
-                    phoneInput.value = '';
-                }
-            });
-        });
-    };
-    initForms();
+    //         phoneInput.addEventListener('blur', function () {
+    //             if (phoneInput.value === '+1' || phoneInput.value === '+1(') {
+    //                 phoneInput.value = '';
+    //             }
+    //         });
+    //     });
+    // };
+    // initForms();
 
     /* -------------------------------------------
             
@@ -655,8 +657,8 @@ document.addEventListener("DOMContentLoaded", function () {
         initAccordion();
         initSliders();
         initScrollAnimations();
-        initPopup();
-        initForms();
+        // initPopup();
+        // initForms();
         initSelect();
         initBF();
         initFancybox();

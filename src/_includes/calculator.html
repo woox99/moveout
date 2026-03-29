@@ -1,0 +1,214 @@
+<div class="mil-calculator">
+    <div class="row mil-aic mil-jcb mil-mb-15">
+        <div class="col-12 col-md-3 mil-sm-mb-15">
+            <div class="mil-input-frame mil-custom-select mil-up">
+                <div class="mil-select-button mil-br-md mil-bg-m-4">
+                    <span class="mil-selected-value mil-fs-18 mil-fw-600 mil-m-1">Move-Out Deep
+                        Clean</span>
+                </div>
+                <ul class="mil-select-dropdown mil-cleaning-type mil-br-md">
+                    <li>
+                        <input type="radio" id="move-out" name="cleaning" value="90" data-studio="299"
+                            data-apartment="399" data-single="499" data-multi="599" checked>
+                        <label for="basic-cleaning">Move-Out Deep Clean</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="post-construction" name="cleaning" value="90" data-studio="449"
+                            data-apartment="599" data-single="749" data-multi="899">
+                        <label for="post-construction">Post-Construction</label>
+                    </li>
+                </ul>
+                <i class="far fa-chevron-down mil-a-2"></i>
+            </div>
+        </div>
+        <div class="col-12 col-md-9">
+            <div class="mil-calc-panel mil-br-md mil-jce mil-md-jcs mil-up">
+                <div class="mil-br-md">
+                    <div class="row mil-aic">
+                        <div class="col-sm-6 mil-aic mil-mb-30">
+                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                <input type="radio" id="property-studio" name="property" value="studio" checked>
+                                <span class="mil-radio-checkmark"></span>
+                                Studio
+                            </label>
+                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                <input type="radio" id="property-apartment" name="property" value="apartment">
+                                <span class="mil-radio-checkmark"></span>
+                                Apartment
+                            </label>
+                        </div>
+                        <div class="col-sm-6 mil-aic mil-mb-30">
+                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                <input type="radio" id="property-single" name="property" value="single">
+                                <span class="mil-radio-checkmark"></span>
+                                Single Home
+                            </label>
+                            <label class="mil-custom-radio mil-fs-18">
+                                <input type="radio" id="property-multi" name="property" value="multi">
+                                <span class="mil-radio-checkmark"></span>
+                                Multi Story
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mil-aic mil-h-100">
+        <div class="col-12 col-md-3">
+            <div class="mil-calc-panel mil-br-md mil-mb-15 mil-up">
+                <div class="mil-area-slider mil-aic mil-mb-30">
+                    <label for="area" class="mil-m-1 mil-fw-600 mil-mr-30 mil-fs-18">
+                        Windows:</label>
+                    <div class="mil-custom-range-slider">
+                        <input type="range" id="area" name="area" min="0" max="24" value="8">
+                        <div class="range-track">
+                            <div class="range-fill"></div>
+                        </div>
+                        <div class="range-thumb"></div>
+                    </div>
+                    <span id="area-value" class="mil-value mil-m-1 mil-fw-600 mil-fs-18">8</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-9">
+            <div class="mil-calc-panel-2 mil-br-md mil-mb-15 mil-up">
+                <div class="mil-rooms mil-w-100">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mil-mb-15">
+                            <div class="mil-aic mil-jcc mil-sm-jcb">
+                                <span class="mil-m-1 mil-fw-600 mil-fs-18 mil-mr-15">Bedrooms:</span>
+                                <div class="mil-bedrooms mil-aic">
+                                    <button type="button" class="mil-room-btn"
+                                        onclick="updateRoomCount('bedrooms', -1)">−</button>
+                                    <span id="bedrooms-count" class="mil-room-count">0</span>
+                                    <button type="button" class="mil-room-btn"
+                                        onclick="updateRoomCount('bedrooms', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mil-mb-15">
+                            <div class="mil-aic mil-jcc mil-sm-jcb">
+                                <span class="mil-m-1 mil-fw-600 mil-fs-18 mil-mr-15">Bathrooms:</span>
+                                <div class="mil-bathrooms mil-aic">
+                                    <button type="button" class="mil-room-btn"
+                                        onclick="updateRoomCount('bathrooms', -1)">−</button>
+                                    <span id="bathrooms-count" class="mil-room-count">1</span>
+                                    <button type="button" class="mil-room-btn"
+                                        onclick="updateRoomCount('bathrooms', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mil-mb-15">
+                            <div class="mil-aic mil-jcc mil-sm-jcb">
+                                <span class="mil-m-1 mil-fw-600 mil-fs-18 mil-mr-15">Carpet
+                                    Cleaning (rooms):</span>
+                                <div class="mil-carpets mil-aic">
+                                    <button type="button" class="mil-room-btn"
+                                        onclick="updateRoomCount('carpets', -1)">−</button>
+                                    <span id="carpets-count" class="mil-room-count">0</span>
+                                    <button type="button" class="mil-room-btn"
+                                        onclick="updateRoomCount('bathrooms', 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mil-additional-services">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb1" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600 mil-already-included">
+                    <input type="checkbox" id="cb1" name="additional-service" value="0" class="mil-additional-service"
+                        checked>
+                    <span class="mil-service-name mil-fs-18">Full kitchen & appliances</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb1" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600 mil-already-included">
+                    <input type="checkbox" id="cb1" name="additional-service" value="0" class="mil-additional-service"
+                        checked>
+                    <span class="mil-service-name mil-fs-18">Scrub and disinfect
+                        bathrooms</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb1" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600 mil-already-included">
+                    <input type="checkbox" id="cb1" name="additional-service" value="0" class="mil-additional-service"
+                        checked>
+                    <span class="mil-service-name mil-fs-18">Detail baseboards, doors, and
+                        surfaces</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb1" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600 mil-already-included">
+                    <input type="checkbox" id="cb1" name="additional-service" value="0" class="mil-additional-service"
+                        checked>
+                    <span class="mil-service-name mil-fs-18">Interior floors, walls, &
+                        lights</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="windows" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600">
+                    <input type="checkbox" id="windows" name="additional-service" value="0"
+                        class="mil-additional-service">
+                    <span class="mil-service-name mil-fs-18">Windows & <br>Exterior Glass
+                        Polish</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb10" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600">
+                    <input type="checkbox" id="cb10" name="additional-service" value="49"
+                        class="mil-additional-service">
+                    <span class="mil-service-name mil-fs-18">Oven Deep Clean</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb11" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600">
+                    <input type="checkbox" id="cb11" name="additional-service" value="99"
+                        class="mil-additional-service">
+                    <span class="mil-service-name mil-fs-18">1-2 Car Garage </span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mil-mb-15 mil-up">
+                <label for="cb12" class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600">
+                    <input type="checkbox" id="cb12" name="additional-service" value="199"
+                        class="mil-additional-service">
+                    <span class="mil-service-name mil-fs-18">Concrete (Pressure Wash)</span>
+                    <span class="mil-checkbox-checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="mil-total-price mil-bg-m-4 mil-br-md mil-up">
+        <div class="row mil-jcb mil-aic">
+            <div class="col-12 col-md-5 mil-mb-30">
+                <div class="mil-jcs mil-ais">
+                    <i class="fal fa-info-circle mil-bg-a-1 mil-br-f mil-m-1 mil-mr-15" style="padding: .5rem"></i>
+                    <p>The price is indicative only. For a more detailed discussion of all the
+                        services you need, use the <a href="contact.html" class="mil-text-link mil-a-2">contact
+                            form</a> or request a <a href="contact.html" class="mil-text-link mil-a-2">call back</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mil-jce mil-sm-jcs mil-mb-30">
+                <div class="mil-tp-frame">
+                    <span class="mil-price-number mil-m-1 mil-fs-18 mil-fw-600">Total price:
+                        &nbsp;&nbsp;$ <span id="total-price" class="mil-fs-36"></span></span>
+                    <a href="tel:+18084004214"
+                        class="mil-btn mil-br-xl mil-bg-a-2 mil-m-4 mil-hover-bri-110 mil-icon-btn">Call now
+                        <i class="far fa-broom mil-bg-m-4 mil-a-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
