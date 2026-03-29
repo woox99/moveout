@@ -115,23 +115,25 @@
                                 <div class="mil-aic mil-column">
                                     <h3 class="mil-fs-32 mil-tac mil-lh-140 mil-mb-60">Request a quote. <br>You'll hear from us within 24 hours.</h3>
                                 </div>
-                                <form>
+                                <form action="https://formspree.io/f/xvzvknrk" method="POST">
+                                    <input type="hidden" name="subject" value="Thank you for contacting MoveOut Deep Cleaners - {{ name }}" />
+                                    <input type="hidden" name="subject">
                                     <div class="row">
                                         <div class="col-6 mil-mb-15">
                                             <div class="mil-input-frame">
-                                                <input type="text" id="user-name" name="user-name" placeholder="Name*" class="mil-br-md mil-bg-m-3" autocomplete="name">
+                                                <input type="text" id="user-name" name="name" placeholder="Name*" class="mil-br-md mil-bg-m-3" autocomplete="name">
                                                 <i class="far fa-user mil-a-2"></i>
                                             </div>
                                         </div>
                                         <div class="col-6 mil-mb-15">
                                             <div class="mil-input-frame">
-                                                <input type="email" id="user-email" name="user-email" placeholder="Email" class="mil-br-md mil-bg-m-3" autocomplete="email">
+                                                <input type="email" id="user-email" name="email" placeholder="Email" class="mil-br-md mil-bg-m-3" autocomplete="email">
                                                 <i class="far fa-at mil-a-2"></i>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mil-mb-15">
                                             <div class="mil-input-frame">
-                                                <input type="tel" id="user-phone" name="user-tel" class="mil-phone-input mil-br-md mil-bg-m-3" placeholder="Phone*" autocomplete="tel">
+                                                <input type="tel" id="user-phone" name="phone" class="mil-phone-input mil-br-md mil-bg-m-3" placeholder="Phone*" autocomplete="tel">
                                                 <i class="far fa-mobile mil-a-2"></i>
                                             </div>
                                         </div>
