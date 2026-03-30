@@ -1462,11 +1462,13 @@ h6 {
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.1rem;
+  font-display: swap;
 }
 
 body {
   font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
+  font-display: swap;
 }
 
 .mil-ff-1 {
