@@ -595,19 +595,19 @@ document.addEventListener("DOMContentLoaded", function () {
     fancybox
                             
     ------------------------------------------- */
-    const initFancybox = () => {
-        const galleryItems = document.querySelectorAll('[data-fancybox="gallery"]');
+    // const initFancybox = () => {
+    //     const galleryItems = document.querySelectorAll('[data-fancybox="gallery"]');
 
-        Fancybox.defaults.Hash = false;
+    //     Fancybox.defaults.Hash = false;
 
-        Fancybox.bind('[data-fancybox="gallery"]', {
-            loop: true,
-            toolbar: true,
-            buttons: ["zoom", "close"],
-        });
-    };
+    //     Fancybox.bind('[data-fancybox="gallery"]', {
+    //         loop: true,
+    //         toolbar: true,
+    //         buttons: ["zoom", "close"],
+    //     });
+    // };
 
-    initFancybox();
+    // initFancybox();
 
     /*----------------------------------------------------------
     ------------------------------------------------------------
@@ -661,7 +661,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // initForms();
         initSelect();
         initBF();
-        initFancybox();
+        // initFancybox();
         ScrollTrigger.refresh();
     });
 });
