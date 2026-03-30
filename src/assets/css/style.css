@@ -130,6 +130,11 @@ trasition
 default
 
 ------------------------------------------- */
+.kaimuki-digital{
+  justify-content: end;
+  gap: 10px;
+}
+
 *,
 *:before,
 *:after {

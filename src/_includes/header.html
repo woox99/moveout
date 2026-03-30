@@ -12,7 +12,7 @@
                     <li class="{% if page.url == '/' %}mil-current{% endif %}">
                         <a href="/">Home</a>
                     </li>
-                    <li class="mil-has-children">
+                    <li class="mil-has-children {% if page.url contains '/services/' %}mil-current{% endif %}">
                         <a href="">Services</a>
                         <ul>
                             <li>
