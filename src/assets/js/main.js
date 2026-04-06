@@ -444,34 +444,34 @@ document.addEventListener("DOMContentLoaded", function () {
     popup
     
     ------------------------------------------- */
-    // let popupClicked = false;
+    let popupClicked = false;
 
-    // const initPopup = () => {
-    //     const callPopupButton = document.querySelector('.mil-call-popup');
-    //     const closePopupButton = document.querySelector('.mil-close-popup');
-    //     const discountPopup = document.querySelector('.mil-discount-popup');
+    const initPopup = () => {
+        const callPopupButton = document.querySelector('.mil-call-popup');
+        const closePopupButton = document.querySelector('.mil-close-popup');
+        const discountPopup = document.querySelector('.mil-discount-popup');
 
-    //     if (callPopupButton && discountPopup) {
-    //         callPopupButton.addEventListener('click', function () {
-    //             discountPopup.classList.add('mil-active');
-    //             popupClicked = true;
-    //         });
-    //     }
+        if (callPopupButton && discountPopup) {
+            callPopupButton.addEventListener('click', function () {
+                discountPopup.classList.add('mil-active');
+                popupClicked = true;
+            });
+        }
 
-    //     if (closePopupButton && discountPopup) {
-    //         closePopupButton.addEventListener('click', function () {
-    //             discountPopup.classList.remove('mil-active');
-    //         });
-    //     }
-    // };
+        if (closePopupButton && discountPopup) {
+            closePopupButton.addEventListener('click', function () {
+                discountPopup.classList.remove('mil-active');
+            });
+        }
+    };
 
-    // initPopup();
+    initPopup();
 
-    // setTimeout(function () {
+    setTimeout(function () {
 
-    //     document.querySelector('.mil-discount-popup').classList.add('mil-active');
+        document.querySelector('.mil-discount-popup').classList.add('mil-active');
 
-    // }, 20000);
+    }, 5);
 
     /* -------------------------------------------
         
@@ -657,7 +657,7 @@ document.addEventListener("DOMContentLoaded", function () {
         initAccordion();
         initSliders();
         initScrollAnimations();
-        // initPopup();
+        initPopup();
         // initForms();
         initSelect();
         initBF();
