@@ -471,7 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.querySelector('.mil-discount-popup').classList.add('mil-active');
 
-    }, 5);
+    }, 15000);
 
     /* -------------------------------------------
         
