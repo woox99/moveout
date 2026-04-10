@@ -53,24 +53,31 @@
   </url>
   <!-- Blog pages -->
   <url>
-    <loc>https://www.moveoutdeepcleaners.com/blog/steam-cleaning-carpets/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/steam-cleaning-carpets/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.moveoutdeepcleaners.com/blog/diy-vs-professional/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/diy-vs-professional/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.moveoutdeepcleaners.com/blog/cleaning-checklist/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/cleaning-checklist/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.moveoutdeepcleaners.com/best-cleaning-services-honolulu/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Contact page -->
