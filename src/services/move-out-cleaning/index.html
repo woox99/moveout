@@ -10,12 +10,12 @@
     <meta name="theme-color" content="#EDCE29">
 
     <!-- Primary SEO -->
-    <title>Move-Out Cleaning Honolulu | Apartment & Rental Cleaning Oahu</title>
+    <title>Move-Out Cleaning Honolulu | Apartment & Rental Move-Out Cleaning Oahu</title>
 
     <meta name="description"
-        content="Professional move-out cleaning in Honolulu and across Oahu. Detailed apartment, condo, and rental cleaning to help you pass inspections and get your deposit back.">
+        content="Professional move out cleaning in Honolulu and across Oahu. Deep cleaning for apartments, condos, and houses to help you pass inspection and secure your deposit.">
 
-    <link rel="canonical" href="https://www.moveoutdeepcleaners.com/services/move-out-cleaning">
+    <link rel="canonical" href="https://www.moveoutdeepcleaners.com/services/move-out-cleaning/">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon.ico">
@@ -27,7 +27,7 @@
         content="Professional move-out cleaning services across Honolulu and Oahu. Reliable deep cleaning for apartments, homes, and rentals.">
     <meta property="og:site_name" content="MoveOut Deep Cleaners">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.moveoutdeepcleaners.com/services/move-out-cleaning">
+    <meta property="og:url" content="https://www.moveoutdeepcleaners.com/services/move-out-cleaning/">
     <meta property="og:image" content="https://www.moveoutdeepcleaners.com/assets/img/og-image.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -47,18 +47,19 @@
         "@type":"Service",
         "name":"Move-Out Cleaning",
         "description":"Professional move-out cleaning services in Honolulu and across Oahu for apartments, homes, and rental properties.",
-        "provider":{
-            "@type":"HouseCleaningService",
-            "@id":"https://www.moveoutdeepcleaners.com/#business"
+        "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://www.moveoutdeepcleaners.com/#business",
+            "name": "MoveOut Deep Cleaners"
         },
-        "areaServed":{
-            "@type":"AdministrativeArea",
-            "name":"Oahu"
+        "areaServed": {
+            "@type": "Place",
+            "name": "Oahu, Hawaii"
         },
         "image":"https://www.moveoutdeepcleaners.com/assets/img/og-image.webp",
         "serviceType":"Move-Out Cleaning",
-        "@id":"https://www.moveoutdeepcleaners.com/services/move-out-cleaning#service",
-        "url":"https://www.moveoutdeepcleaners.com/services/move-out-cleaning"
+        "@id":"https://www.moveoutdeepcleaners.com/services/move-out-cleaning/#service",
+        "url":"https://www.moveoutdeepcleaners.com/services/move-out-cleaning/"
         }
     </script>
 
@@ -81,7 +82,7 @@
     <div class="mil-page-wrapper">
 
         <!-- preloader -->
-        {% include 'preloader.html' %}
+        <!-- {% include 'preloader.html' %} -->
         <!-- preloader end -->
 
         <!-- header -->
@@ -89,7 +90,7 @@
         <!-- header end -->
 
         <!-- discount popup -->
-        {% include 'discount_popup.html' %}
+        <!-- {% include 'discount_popup.html' %} -->
         <!-- discount popup end -->
 
         <!-- dynamic content -->
@@ -117,8 +118,8 @@
                                                 <rect x="22.8125" y="67.2046" width="3.46874" height="62.7841"
                                                     transform="rotate(-135 22.8125 67.2046)" fill="#F6D62D" />
                                             </svg>
-                                            <h1 class="mil-fs-72 mil-sm-fs-72 mil-lh-110">Professional <br>Move-Out
-                                                Cleaning <br> in Oahu
+                                            <h1 class="mil-fs-72 mil-sm-fs-72 mil-lh-110">Move Out Cleaning in Honolulu
+                                                & Oahu for Apartments, Condos & Homes
                                             </h1>
                                         </div>
                                     </div>
@@ -126,14 +127,14 @@
                                         <img src="/assets/img/bubble-2.webp" alt="Deep cleaning utility bucket"
                                             class="mil-text-image mil-long">
                                     </div>
-                                    <p class="mil-fs-30 mil-mb-30">Our move-out and deep cleaning service leaves your
-                                        property in <strong>perfect, move-in ready condition</strong>. Every corner,
-                                        surface, and detail is spotless, sanitized, and ready for the next tenant.
+                                    <p class="mil-fs-30 mil-mb-30">Professional move out cleaning service across
+                                        Honolulu and Oahu. We deep clean apartments, condos, and houses to meet landlord
+                                        inspection standards and help tenants secure their full security deposit.
                                     </p>
                                     <div class="mil-aic">
-                                        <a href="#pricing"
-                                            class="mil-btn mil-icon-btn mil-bg-a-1 mil-br-xl mil-hover-bri-105 mil-hover-scale mil-mr-40">See
-                                            prices<i class="far fa-plus mil-bg-m-4 mil-m-1"></i></a>
+                                        <a href="#calculator"
+                                            class="mil-btn mil-icon-btn mil-bg-a-1 mil-br-xl mil-hover-bri-105 mil-hover-scale mil-mr-40">Instant
+                                            cleaning estimate<i class="far fa-plus mil-bg-m-4 mil-m-1"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +143,7 @@
                             <ul class="mil-breadcrumbs mil-mb-60">
                                 <li><a href="/">Home</a></li>
                                 <li>Services</li>
-                                <li>Move-Out Deep Cleaning</li>
+                                <li>Move-Out Cleaning</li>
                             </ul>
                             <div class="mil-circle-text-position">
                                 <div class="mil-circle-text mil-rotate mil-accent-inside" data-value="360">
@@ -172,15 +173,28 @@
             </div>
             <!-- hero end -->
 
+            <!-- calculator -->
+            <div id="calculator">
+                <div class="container mil-p-0-f">
+                    <div class="mil-section-title mil-mb-f mil-up">
+                        <h2 class="mil-fs-36">Calculate your cleaning estimate</h2>
+                        <div class="mil-dots"></div>
+                        <b class="mil-fs-24">00</b>
+                    </div>
+                    {% include 'calculator.html' %}
+                </div>
+            </div>
+            <!-- calculator end -->
 
             <!-- pricing -->
             <div class="mil-p-f-15" id="pricing">
                 <div class="container">
                     <div class="mil-section-title mil-mb-f mil-up">
-                        <h2 class="mil-fs-36">Estimated pricing</h2>
+                        <h2 class="mil-fs-36">Move Out Cleaning Prices in Honolulu & Oahu</h2>
                         <div class="mil-dots"></div>
                         <b class="mil-fs-24">01</b>
                     </div>
+                    <p class="mil-fs-20 mil-mb-30">Transparent move out cleaning pricing based on property size.</p>
                     <div class="row">
                         <div class="col-md-6 col-lg-3 mil-mb-15 mil-up">
                             <div class="mil-step-card mil-step-line mil-bg-m-4 mil-br-md">
@@ -232,7 +246,7 @@
                     </div>
                     <p class="mil-mb-15 mil-fs-20">*All pricing listed is estimated and may vary based on the size and
                         scope of work</p>
-                    <p class="mil-mb-15 mil-fs-20"><span class="mil-fs-30">$99</span> per room for carpet deep cleaning
+                    <p class="mil-mb-15 mil-fs-20"><span class="mil-fs-30">$99</span> per room for carpet cleaning
                         &
                         sanitization</p>
                     <p class="mil-mb-15 mil-fs-20"><span class="mil-fs-30">$10</span> per window for interior clean &
@@ -241,14 +255,167 @@
             </div>
             <!-- pricing end -->
 
+            <!-- landlord/tenant beneifits -->
+            <div class="container">
+                <div class="mil-section-title mil-mb-f mil-up">
+                    <h2 class="mil-fs-36">Move Out Cleaning for Tenants and Landlords in Oahu</h2>
+                    <div class="mil-dots"></div>
+                    <b class="mil-fs-24">02</b>
+                </div>
+                <p class="mil-fs-20 mil-lh-160 mil-up mil-mb-30">Whether you’re a tenant moving out of a rental in
+                    Honolulu or a landlord preparing a unit for new occupants, professional move out cleaning helps
+                    ensure the property meets inspection standards and is ready for turnover. <br><br>
+                    Our move out cleaning service in Oahu is designed to reduce stress during transitions, improve
+                    inspection outcomes, and prepare homes, apartments, and condos for the next stage.
+                </p>
+                <div class="mil-hero-cards-frame">
+                    <div class="row">
+                        <div class="col-lg-6 mil-mb-15">
+                            <div class="mil-hero-reviews-card mil-bg-m-4 mil-br-md">
+                                <h3 class="mil-fs-32 mil-mb-30">For Tenants:</h3>
+                                <p class="mil-fs-20">Move out cleaning helps tenants meet rental inspection standards
+                                    and increase the chances of getting their full security deposit back.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mil-mb-15">
+                            <div class="mil-hero-reviews-card mil-bg-m-4 mil-br-md">
+                                <h3 class="mil-fs-32 mil-mb-30">For Landlords:</h3>
+                                <p class="mil-fs-20">Professional cleaning improves property presentation, reduces
+                                    vacancy time, and ensures units are ready for new tenants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- landlord/tenant benefits end -->
+
+            <!-- call to action -->
+            {% include 'cta.html' %}
+            <!-- call to action end -->
+
+            <!-- whats included -->
+            <div class="container mil-p-ff">
+                <div class="mil-section-title mil-mb-f mil-up">
+                    <h2 class="mil-fs-36">What’s Included in Our Move Out Cleaning in Oahu</h2>
+                    <div class="mil-dots"></div>
+                    <b class="mil-fs-24">03</b>
+                </div>
+
+                <p class="mil-fs-20 mil-lh-160 mil-up mil-mb-30">
+                    Our move out cleaning service in Honolulu and across Oahu is designed to meet rental inspection
+                    standards and prepare homes, apartments, and condos for new tenants.
+                </p>
+
+                <div class="mil-hero-cards-frame mil-mb-60">
+
+                    <div class="row">
+                        <div class="col-lg-6 mil-mb-15">
+                            <div class="mil-hero-reviews-card mil-bg-m-4 mil-br-md">
+                                <h3 class="mil-fs-32 mil-mb-30">✔ Full Home Deep Cleaning</h3>
+                                <ul class="mil-check-list mil-fs-20">
+                                    <li>Vacuum all floors and carpets</li>
+                                    <li>Sweep and mop hard surfaces</li>
+                                    <li>Dust all reachable surfaces</li>
+                                    <li>Remove buildup from corners and edges</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mil-mb-15">
+                            <div class="mil-hero-reviews-card mil-bg-m-4 mil-br-md">
+                                <h3 class="mil-fs-32 mil-mb-30">✔ Kitchen Deep Cleaning</h3>
+                                <ul class="mil-check-list mil-fs-20">
+                                    <li>Clean countertops and backsplash</li>
+                                    <li>Degrease stove and exterior appliances</li>
+                                    <li>Clean sink and fixtures</li>
+                                    <li>Wipe cabinet exteriors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mil-mb-15">
+                            <div class="mil-hero-reviews-card mil-bg-m-4 mil-br-md">
+                                <h3 class="mil-fs-32 mil-mb-30">✔ Bathroom Sanitization</h3>
+                                <ul class="mil-check-list mil-fs-20">
+                                    <li>Scrub shower, tub, and tiles</li>
+                                    <li>Sanitize toilet and sink</li>
+                                    <li>Remove soap scum and buildup</li>
+                                    <li>Clean mirrors and fixtures</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mil-mb-15">
+                            <div class="mil-hero-reviews-card mil-bg-m-4 mil-br-md">
+                                <h3 class="mil-fs-32 mil-mb-30">✔ Interior Detailing</h3>
+                                <ul class="mil-check-list mil-fs-20">
+                                    <li>Wipe inside cabinets and drawers</li>
+                                    <li>Dust baseboards and trim</li>
+                                    <li>Clean doors and door frames</li>
+                                    <li>Spot clean walls (light marks)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- whats included end -->
+
+            <!-- Satisfaction gauranteed -->
+            <div class="container">
+                <div class="mil-mb-60" id="scroll">
+                    <div class="container">
+                        <div class="row mil-jcc">
+                            <div class="col-lg-6 mil-jcc mil-column mil-aic">
+                                <div class="mil-jcc mil-mb-60 mil-up">
+                                    <div class="mil-intr-star mil-aic mil-jcb">
+                                        <img src="/assets/img/ui/s2.png" alt="star" class="mil-star">
+                                        <div class="mil-aic mil-mr-30">
+                                            <div class="mil-fs-40 mil-fw-600 mil-m-1 mil-mr-15">100<span
+                                                    class="mil-a-1">%</span></div>
+                                            <p class="mil-up-text mil-m-1">Satisfaction <br>Gauranteed</p>
+                                        </div>
+                                        <img src="/assets/img/logo_website.webp" alt="MoveOut logo" class="mil-logo">
+                                    </div>
+                                </div>
+                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-tac mil-mb-40 mil-up">Our company was built
+                                    on the goal of
+                                    becoming a trusted partner for property managers and realtors who expect the job to
+                                    be done right.
+                                </p>
+                                <div class="mil-aic mil-up">
+                                    <div class="mil-portrait-frame mil-mr-30">
+                                        <svg width="89" height="89" viewBox="0 0 89 89" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="42.1406" y="13.0017" width="3.46874" height="62.7841"
+                                                fill="#F6D62D" />
+                                            <rect x="13.0078" y="45.2607" width="3.46874" height="62.7841"
+                                                transform="rotate(-90 13.0078 45.2607)" fill="#F6D62D" />
+                                            <rect x="21.5859" y="22.8096" width="3.46874" height="62.7841"
+                                                transform="rotate(-45 21.5859 22.8096)" fill="#F6D62D" />
+                                            <rect x="22.8125" y="67.2046" width="3.46874" height="62.7841"
+                                                transform="rotate(-135 22.8125 67.2046)" fill="#F6D62D" />
+                                        </svg>
+                                    </div>
+                                    <p class="mil-ff-2 mil-a-2 mil-fs-36">Every corner done right</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Satisfaction gauranteed end -->
 
             <!-- services -->
             <div class="mil-p-0-15">
                 <div class="container">
                     <div class="mil-section-title mil-mb-f mil-up">
-                        <h2 class="mil-fs-36">Additional services</h2>
+                        <h2 class="mil-fs-36">Related Cleaning Services in Oahu</h2>
                         <div class="mil-dots"></div>
-                        <b class="mil-fs-24">02</b>
+                        <b class="mil-fs-24">04</b>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mil-mb-15 mil-up">
@@ -348,9 +515,24 @@
             </div>
             <!-- services end -->
 
-            <!-- call to action -->
-            {% include 'cta.html' %}
-            <!-- call to action end -->
+            <!-- service area -->
+            <div class="container mil-p-ff">
+                <div class="mil-section-title mil-mb-f mil-up">
+                    <h2 class="mil-fs-36">Move Out Cleaning Services Across Honolulu and Oahu</h2>
+                    <div class="mil-dots"></div>
+                    <b class="mil-fs-24">05</b>
+                </div>
+                <p class="mil-fs-22 mil-lh-160 mil-up mil-mb-30">We provide move out cleaning services throughout Oahu
+                    including
+                    Honolulu, Waikiki, Kaimuki, Manoa, Kapahulu, Kahala, Hawaii Kai, Pearl City, Aiea, Kaneohe, Kailua,
+                    and Kapolei.
+                </p>
+                <p class="mil-fs-22 mil-lh-160 mil-up">
+                    Our service is designed for rental turnovers, tenant move-outs, and property manager cleaning
+                    requirements.
+                </p>
+            </div>
+            <!-- service area end -->
 
             <!-- faq -->
             {% include 'faq.html' %}
