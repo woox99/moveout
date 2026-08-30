@@ -101,7 +101,7 @@
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap-grid.css">
     <!-- swiper css -->
-    <!-- <link rel="stylesheet" href="/assets/css/plugins/swiper.css"> -->
+    <link rel="stylesheet" href="/assets/css/plugins/swiper.css">
     <!-- fancybox css -->
     <!-- <link rel="stylesheet" href="/assets/css/plugins/fancybox.css"> -->
     <!-- font awesome css -->
@@ -111,7 +111,7 @@
 
 </head>
 
-<body>
+<body class="mil-tp-invert">
 
     <!-- page wrapper -->
     <div class="mil-page-wrapper">
@@ -128,17 +128,28 @@
         {% include 'discount_popup.html' %}
         <!-- discount popup end -->
 
-        <!-- dynamic content -->
+        <!-- main content -->
         <div id="swupMain" class="transition-fade">
 
             <!-- hero -->
-            <div class="mil-hero-inner mil-relative" id="top">
-                <img src="/assets/img/ui/bg.webp" alt="" class="mil-bg" style="top: 0">
-                <div class="container mil-column mil-jcb mil-h-100">
-                    <div class="row mil-jcb mil-h-100">
-                        <div class="col-lg-7 mil-mb-60">
-                            <div class="mil-main-title mil-jcc mil-ais mil-column">
-                                <div class="mil-column mil-sm-mb-0 mil-w-100">
+            <div class="mil-hero-4 mil-relative" id="top">
+                <!-- Hero Desktop -->
+                <div class="mil-video-background mil-delay-load">
+                    <video class="mil-scale-img-top" data-value-1="1" data-value-2="1.3" autoplay="autoplay" loop="loop"
+                        muted="" playsinline="" oncontextmenu="return false;" preload="auto"
+                        poster="/assets/img/hero-poster-desktop.webp">
+                        <!-- <source src="/assets/img/hero-video-desktop.mp4"> -->
+                    </video>
+                </div>
+                <div class="mil-main-title">
+                    <div class="container">
+                        <div class="row mil-jcb mil-aic mil-h-100">
+                            <div class="col-lg-6">
+                                <h1 class="title mil-fs-36 mil-sm-fs-36 mil-lh-110 mil-m-3 mil-mb-60">Move Out Cleaning
+                                    in Honolulu & Oahu for Apartments, Condos & Houses</i>
+                                </h1>
+                                <div class="mil-column mil-sm-aic mil-mb-60 mil-scale-img-top" data-value-1="1"
+                                    data-value-2=".85">
                                     <div class="mil-aic">
                                         <div class="mil-word-frame">
                                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none"
@@ -153,63 +164,205 @@
                                                 <rect x="22.8125" y="67.2046" width="3.46874" height="62.7841"
                                                     transform="rotate(-135 22.8125 67.2046)" fill="#F6D62D" />
                                             </svg>
-                                            <h1 class="mil-fs-72 mil-sm-fs-72 mil-lh-110">Move Out Cleaning in Honolulu
-                                                & Oahu for Apartments, Condos & Homes
-                                            </h1>
+                                            <h2 class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true">
+                                                MoveOut</h2>
                                         </div>
+                                        <div class="mil-fs-16 mil-m-2 mil-lh-160 mil-ml-60 mil-mt-20 mil-sm-hidden">
+                                            Find out why, <br>property managers love us.</div>
                                     </div>
-                                    <div class="mil-word-frame mil-mb-60 mil-mt-30">
-                                        <img src="/assets/img/bubble-2.webp" alt="Deep cleaning utility bucket"
-                                            class="mil-text-image mil-long">
+                                    <div class="mil-word-frame">
+                                        <!-- Bubble 1 -->
+                                        <h2 class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true"><img
+                                                src="/assets/img/bubble2.webp" alt="" class="mil-text-image mil-long">
+                                            Deep</h2>
                                     </div>
-                                    <p class="mil-fs-30 mil-mb-30">Professional move out cleaning service across
-                                        Honolulu and Oahu. We deep clean apartments, condos, and houses to meet landlord
-                                        inspection standards and help tenants secure their full security deposit.
+                                    <div class="mil-word-frame mil-mb-40">
+                                        <!-- Bubble 2 -->
+                                        <h2 class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true">
+                                            Cleaners <img src="/assets/img/bubble3.webp" alt="" class="mil-text-image">
+                                        </h2>
+                                        <svg width="89" height="89" viewBox="0 0 89 89" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="mil-text-star mil-sm-hidden"
+                                            style="width: 2vw; bottom: -40%;left: 5%;">
+                                            <rect x="42.1406" y="13.0017" width="3.46874" height="62.7841"
+                                                fill="#F6D62D" />
+                                            <rect x="13.0078" y="45.2607" width="3.46874" height="62.7841"
+                                                transform="rotate(-90 13.0078 45.2607)" fill="#F6D62D" />
+                                            <rect x="21.5859" y="22.8096" width="3.46874" height="62.7841"
+                                                transform="rotate(-45 21.5859 22.8096)" fill="#F6D62D" />
+                                            <rect x="22.8125" y="67.2046" width="3.46874" height="62.7841"
+                                                transform="rotate(-135 22.8125 67.2046)" fill="#F6D62D" />
+                                        </svg>
+                                    </div>
+                                    <p class="mil-fs-32 mil-mb-60 mil-mt-60 mil-lh-160 mil-m-3">Professional move out
+                                        cleaning service across Honolulu and Oahu. We deep clean apartments, condos, and
+                                        houses to meet landlord inspection standards and help tenants secure their full
+                                        security deposit.
                                     </p>
-                                    <div class="mil-aic">
-                                        <a href="#calculator"
-                                            class="mil-btn mil-icon-btn mil-bg-a-1 mil-br-xl mil-hover-bri-105 mil-hover-scale mil-mr-40">Instant
-                                            cleaning estimate<i class="far fa-plus mil-bg-m-4 mil-m-1"></i></a>
+                                </div>
+                            </div>
+                            <!-- Contact Form -->
+                            <div class="col-lg-6 mil-mb-f">
+                                <div class="row mil-jce">
+                                    <div class="col-lg-10 mil-relative">
+                                        <div class="mil-hero-form-frame mil-bg-m-5 mil-br-lg mil-scale-img-top mil-sm-anim-none"
+                                            data-value-1="1" data-value-2=".85">
+                                            <div class="mil-aic mil-column">
+                                                <h2 class="mil-fs-32 mil-tac mil-lh-140 mil-m-3 mil-mb-60">Request a
+                                                    Quote</h2>
+                                            </div>
+                                            <form action="https://formspree.io/f/xvzvknrk" method="POST">
+                                                <input type="hidden" name="subject"
+                                                    value="Thank you for contacting MoveOut Deep Cleaners - {{ name }}" />
+                                                <div class="row">
+                                                    <div class="col-6 mil-mb-15">
+                                                        <div class="mil-input-frame">
+                                                            <input type="text" id="user-name" name="name"
+                                                                placeholder="Name*" class="mil-br-md mil-bg-m-1 mil-m-3"
+                                                                autocomplete="name">
+                                                            <i class="far fa-user mil-a-1"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 mil-mb-15">
+                                                        <div class="mil-input-frame">
+                                                            <input type="email" id="user-email" name="email"
+                                                                placeholder="Email" class="mil-br-md mil-bg-m-1 mil-m-3"
+                                                                autocomplete="email">
+                                                            <i class="far fa-at mil-a-1"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mil-mb-15">
+                                                        <div class="mil-input-frame">
+                                                            <input type="tel" id="user-phone" name="phone"
+                                                                class="mil-phone-input mil-br-md mil-bg-m-1 mil-m-3"
+                                                                placeholder="Phone*" autocomplete="tel">
+                                                            <i class="far fa-mobile mil-a-1"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 mil-mb-30">
+                                                        <div class="mil-input-frame mil-type-2">
+                                                            <textarea id="message" name="message"
+                                                                placeholder="Enter your message"
+                                                                class="mil-br-md mil-bg-m-1 mil-m-3"
+                                                                autocomplete="off"></textarea>
+                                                            <i class="far fa-comment-alt mil-a-1"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 mil-aic">
+                                                        <p class="mil-fs-14 mil-m-2">By clicking send, you
+                                                            agree to our <a href="/legal/" class="mil-a-2">Privacy
+                                                                Policy</a>
+                                                        </p>
+                                                        <button
+                                                            class="mil-btn mil-bg-a-1 mil-br-xl mil-hover-bri-105 mil-hover-scale mil-ml-60"
+                                                            type="submit">Send request</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="mil-column col-lg-5 mil-jcb mil-aie mil-sm-ais mil-mb-60">
-                            <ul class="mil-breadcrumbs mil-mb-60">
-                                <li><a href="/">Home</a></li>
-                                <li>Services</li>
-                                <li>Move-Out Cleaning</li>
-                            </ul>
-                            <div class="mil-circle-text-position">
-                                <div class="mil-circle-text mil-rotate mil-accent-inside" data-value="360">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300"
-                                        enable-background="new 0 0 300 300" xml:space="preserve">
-                                        <defs>
-                                            <path id="circlePath"
-                                                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                                        </defs>
-                                        <circle cx="150" cy="100" r="75" fill="none" />
-                                        <g>
-                                            <use xlink:href="#circlePath" fill="none" />
-                                            <text class="mil-link mil-dark" style="letter-spacing: .75rem">
-                                                <textPath xlink:href="#circlePath">Scroll down - Scroll down -
-                                                </textPath>
-                                            </text>
-                                        </g>
-                                    </svg>
+                    </div>
+
+                </div>
+            </div>
+            <!-- hero end -->
+
+            <!-- gallery -->
+            <div class="container-fluid mil-mt-60">
+                <div class="swiper-container mil-team-slider mil-mb-f mil-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal1.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Licensed and Insured</h5>
+                                    <p class="mil-m-2 mil-up-text">Trusted</p>
                                 </div>
-                                <a href="#scroll" class="far fa-arrow-down mil-bg-m-1 mil-a-1"
-                                    aria-label="Scroll Down"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal2.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Trimming & Baseboard</h5>
+                                    <p class="mil-m-2 mil-up-text">Cleaning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal3.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Appliances</h5>
+                                    <p class="mil-m-2 mil-up-text">Included</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal4.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Top to Bottom</h5>
+                                    <p class="mil-m-2 mil-up-text">Cleaning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal5.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Carpet</h5>
+                                    <p class="mil-m-2 mil-up-text">Cleaning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal6.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Window</h5>
+                                    <p class="mil-m-2 mil-up-text">Cleaning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal7.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Call for Quote</h5>
+                                    <p class="mil-m-2 mil-up-text">Today</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal8.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">Kitchen</h5>
+                                    <p class="mil-m-2 mil-up-text">Cleaning</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mil-team-card">
+                                <img src="/assets/img/gal9.webp" alt="Team member">
+                                <div class="mil-descr">
+                                    <h5 class="mil-fs-20 mil-m-4 mil-mb-15">100% Satisfaction</h5>
+                                    <p class="mil-m-2 mil-up-text">Guaranteed</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- hero end -->
+            <!-- gallery end -->
 
             <!-- calculator -->
-            <div id="calculator">
+            <!-- <div id="calculator">
                 <div class="container mil-p-0-f">
                     <div class="mil-section-title mil-mb-f mil-up">
                         <h2 class="mil-fs-36">Calculate your cleaning estimate</h2>
@@ -218,7 +371,7 @@
                     </div>
                     {% include 'calculator.html' %}
                 </div>
-            </div>
+            </div> -->
             <!-- calculator end -->
 
             <!-- pricing -->
@@ -261,7 +414,7 @@
                                 <div class="mil-m-1 mil-fs-20 mil-fw-600 mil-mb-15">from $ <span
                                         class="mil-fs-52">599</span> <span class="mil-fw-400 mil-fs-16"></span></div>
                                 <ul class="mil-has-last-space">
-                                    <li class="mil-fs-20 mil-mb-15">1799 sq/ft</li>
+                                    <li class="mil-fs-20 mil-mb-15">1499 sq/ft</li>
                                     <li class="mil-fs-20 mil-mb-15 mil-a-2">+20% Discount for Property Managers</li>
                                 </ul>
                             </div>
@@ -273,7 +426,7 @@
                                 <div class="mil-m-1 mil-fs-20 mil-fw-600 mil-mb-15">from $ <span
                                         class="mil-fs-52">749</span> <span class="mil-fw-400 mil-fs-16"></span></div>
                                 <ul class="mil-has-last-space">
-                                    <li class="mil-fs-20 mil-mb-15">1800+ sq/ft</li>
+                                    <li class="mil-fs-20 mil-mb-15">1500+ sq/ft</li>
                                     <li class="mil-fs-20 mil-mb-15 mil-a-2">+20% Discount for Property Managers</li>
                                 </ul>
                             </div>
@@ -284,8 +437,6 @@
                     <p class="mil-mb-15 mil-fs-20"><span class="mil-fs-30">$99</span> per room for carpet cleaning
                         &
                         sanitization</p>
-                    <p class="mil-mb-15 mil-fs-20"><span class="mil-fs-30">$10</span> per window for interior clean &
-                        exterior glass polish</p>
                 </div>
             </div>
             <!-- pricing end -->
@@ -401,7 +552,7 @@
 
             <!-- Satisfaction gauranteed -->
             <div class="container">
-                <div class="mil-mb-60" id="scroll">
+                <div class="mil-mb-60" id="">
                     <div class="container">
                         <div class="row mil-jcc">
                             <div class="col-lg-6 mil-jcc mil-column mil-aic">
@@ -653,7 +804,7 @@
             <!-- footer end -->
 
         </div>
-        <!-- dynamic content end -->
+        <!-- main content end -->
 
     </div>
     <!-- page wrapper end -->
@@ -671,12 +822,21 @@
     <!-- cleave js -->
     <!-- <script src="/assets/js/plugins/cleave.js"></script> -->
     <!-- swiper js -->
-    <!-- <script src="/assets/js/plugins/swiper.min.js"></script> -->
+    <script src="/assets/js/plugins/swiper.min.js"></script>
     <!-- fancybox js -->
-    <!-- <script src="/assets/js/plugins/fancybox.js"></script> -->
+    <script src="/assets/js/plugins/fancybox.js"></script>
     <!-- calculator js -->
     <script src="/assets/js/plugins/calculator.js"></script>
     <!-- main js -->
     <script src="/assets/js/main.js"></script>
+
+    <!-- Clear contact form -->
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
 
 </body>

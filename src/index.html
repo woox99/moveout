@@ -122,9 +122,9 @@
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap-grid.css">
     <!-- swiper css -->
-    <!-- <link rel="stylesheet" href="/assets/css/plugins/swiper.css"> -->
+    <link rel="stylesheet" href="/assets/css/plugins/swiper.css">
     <!-- fancybox css -->
-    <!-- <link rel="stylesheet" href="/assets/css/plugins/fancybox.css"> -->
+    <link rel="stylesheet" href="/assets/css/plugins/fancybox.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="/assets/css/plugins/fontawesome.css">
     <!-- main css -->
@@ -168,12 +168,20 @@
 
             <!-- hero -->
             <div class="mil-hero-4 mil-relative" id="top">
-                <div class="mil-video-background mil-delay-load">
-                    <!-- Add poster="" -->
+                <!-- Hero Desktop -->
+                <div class="mil-video-background mil-delay-load mil-sm-hidden">
                     <video class="mil-scale-img-top" data-value-1="1" data-value-2="1.3" autoplay="autoplay" loop="loop"
                         muted="" playsinline="" oncontextmenu="return false;" preload="auto"
-                        poster="/assets/img/hero-poster.webp">
-                        <source src="/assets/img/hero-video.mp4">
+                        poster="/assets/img/hero-poster-desktop.webp">
+                        <source src="/assets/img/hero-video-desktop.mp4">
+                    </video>
+                </div>
+                <!-- Hero Mobile -->
+                <div class="mil-video-background mil-delay-load hero-mobile">
+                    <video class="mil-scale-img-top" data-value-1="1" data-value-2="1.3" autoplay="autoplay" loop="loop"
+                        muted="" playsinline="" oncontextmenu="return false;" preload="auto"
+                        poster="/assets/img/web13.webp">
+                        <source src="/assets/img/hero-video-mobile.mp4">
                     </video>
                 </div>
                 <div class="mil-main-title">
@@ -199,21 +207,23 @@
                                                 <rect x="22.8125" y="67.2046" width="3.46874" height="62.7841"
                                                     transform="rotate(-135 22.8125 67.2046)" fill="#F6D62D" />
                                             </svg>
-                                            <div class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true">
-                                                House</div>
+                                            <h2 class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true">
+                                                MoveOut</h2>
                                         </div>
                                         <div class="mil-fs-16 mil-m-2 mil-lh-160 mil-ml-60 mil-mt-20 mil-sm-hidden">
                                             Find out why, <br>property managers love us.</div>
                                     </div>
                                     <div class="mil-word-frame">
-                                        <div class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true"><img
-                                                src="/assets/img/bubble-2.webp" alt="" class="mil-text-image mil-long">
-                                            Cleaning</div>
+                                        <!-- Bubble 1 -->
+                                        <h2 class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true"><img
+                                                src="/assets/img/bubble1.webp" alt="" class="mil-text-image mil-long">
+                                            Deep</h2>
                                     </div>
                                     <div class="mil-word-frame mil-mb-40">
-                                        <div class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true">
-                                            Honolulu <img src="/assets/img/bubble-3.webp" alt="" class="mil-text-image">
-                                        </div>
+                                        <!-- Bubble 2 -->
+                                        <h2 class="mil-fs-100 mil-sm-fs-72 mil-lh-110 mil-m-3" aria-hidden="true">
+                                            Cleaners <img src="/assets/img/bubble3.webp" alt="" class="mil-text-image">
+                                        </h2>
                                         <svg width="89" height="89" viewBox="0 0 89 89" fill="none"
                                             xmlns="http://www.w3.org/2000/svg" class="mil-text-star mil-sm-hidden"
                                             style="width: 2vw; bottom: -40%;left: 5%;">
@@ -332,6 +342,8 @@
             </div>
             <!-- hero end -->
 
+
+
             <!-- discount section -->
             <div class="container">
                 <div class="mil-hero-cards-frame">
@@ -407,7 +419,7 @@
                             </div>
                             <div class="col-lg-4 mil-mb-15 mil-up">
                                 <div class="mil-img-frame">
-                                    <img src="/assets/img/service-move-out-cleaning.webp"
+                                    <img src="/assets/img/web1.webp"
                                         alt="Clean house after move-out cleaning service" class="mil-scale-img"
                                         data-value-1="1.15" data-value-2="1">
                                 </div>
@@ -566,11 +578,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mil-up mil-md-hidden">
+                        <div class="col-lg-6 mil-up">
                             <div class="mil-image-part">
                                 <div class="mil-cover-frame">
-                                    <img src="/assets/img/ui/cont-1.jpg" alt="" class="mil-scale-img"
-                                        data-value-1="1.15" data-value-2="1">
+                                    <img src="/assets/img/web2.webp" alt="" class="mil-scale-img" data-value-1="1.15"
+                                        data-value-2="1">
                                 </div>
                             </div>
                         </div>
@@ -650,7 +662,7 @@
                     <div class="row">
                         <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
                             <div class="mil-about-box mil-br-md">
-                                <img src="/assets/img/about-1.webp" alt="Waikiki condos and beach"
+                                <img src="/assets/img/web4.webp" alt="Waikiki condos and beach"
                                     class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1">
                             </div>
                         </div>
@@ -676,7 +688,7 @@
                         </div>
                         <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
                             <div class="mil-about-box mil-br-md">
-                                <img src="/assets/img/about-2.webp" alt="Clean kitchen after move-out cleaning service"
+                                <img src="/assets/img/web12.webp" alt="Clean kitchen after move-out cleaning service"
                                     class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1">
                             </div>
                         </div>
@@ -696,7 +708,7 @@
                         </div>
                         <div class="col-md-6 col-xl-4 mil-mb-15 mil-up mil-relative">
                             <div class="mil-about-box mil-br-md">
-                                <img src="/assets/img/about-3.webp" alt="Clean bathroom after move-out cleaning service"
+                                <img src="/assets/img/web7.webp" alt="Clean bathroom after move-out cleaning service"
                                     class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1"
                                     style="object-position: bottom">
                             </div>
@@ -735,8 +747,11 @@
                     deep house cleaning, move-out cleaning, move-in cleaning, carpet cleaning,
                     and detailed home cleaning for apartments, condos, and houses.
                 </p>
+
             </div>
             <!-- service area end -->
+
+
 
             <!-- blog -->
             {% include 'blog.html' %}
@@ -837,9 +852,9 @@
     <!-- cleave js -->
     <!-- <script src="/assets/js/plugins/cleave.js"></script> -->
     <!-- swiper js -->
-    <!-- <script src="/assets/js/plugins/swiper.min.js"></script> -->
+    <script src="/assets/js/plugins/swiper.min.js"></script>
     <!-- fancybox js -->
-    <!-- <script src="/assets/js/plugins/fancybox.js"></script> -->
+    <script src="/assets/js/plugins/fancybox.js"></script>
     <!-- calculator js -->
     <script src="/assets/js/plugins/calculator.js"></script>
     <!-- main js -->

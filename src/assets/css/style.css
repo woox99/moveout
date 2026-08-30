@@ -686,7 +686,13 @@ flex
             align-items: flex-end;
   }
 }
+.hero-mobile {
+  display: none;
+}
 @media (max-width: 768px) {
+  .hero-mobile {
+    display: block;
+  }
   .mil-sm-flex {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
