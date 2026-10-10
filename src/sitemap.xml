@@ -3,7 +3,7 @@
 
   <!-- Home page -->
   <url>
-    <loc>https://www.haleanelalani.org/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -11,70 +11,97 @@
 
   <!-- Services pages -->
   <url>
-    <loc>https://www.haleanelalani.org/providing-respite-care/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/services/move-out-cleaning/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.haleanelalani.org/providing-end-of-life-care/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/services/post-construction-cleaning/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.haleanelalani.org/providing-bereavement-support/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/services/carpet-cleaning/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.haleanelalani.org/providing-community-engagement/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/services/window-cleaning/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.haleanelalani.org/providing-therapeutic-activities/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/services/concrete-cleaning/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Our story page -->
+  <!-- Blog list page -->
   <url>
-    <loc>https://www.haleanelalani.org/our-story/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/blog/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Blog pages -->
+  <url>
+    <loc>https://www.moveoutdeepcleaners.com/steam-cleaning-carpets/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.moveoutdeepcleaners.com/diy-vs-professional/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.moveoutdeepcleaners.com/cleaning-checklist/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.moveoutdeepcleaners.com/best-cleaning-services-honolulu/</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact page -->
+  <url>
+    <loc>https://www.moveoutdeepcleaners.com/contact/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!--  our hale page -->
+  <!-- Price calculator -->
   <url>
-    <loc>https://www.haleanelalani.org/our-hale/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/price-calculator/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- volunteer page -->
+  <!-- Legal (do not index) -->
   <url>
-    <loc>https://www.haleanelalani.org/volunteer/</loc>
+    <loc>https://www.moveoutdeepcleaners.com/legal/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Team member page -->
-  <url>
-    <loc>https://www.haleanelalani.org/team-joline-murillo/</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
